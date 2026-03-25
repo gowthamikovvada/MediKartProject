@@ -24,6 +24,7 @@ public class TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed extends BaseC
 		Reporter.log("Clicking on first result is successful");
 		searchresultpage.wishListIconsClick();
 		Reporter.log("Wishlist click is successful");
+		Thread.sleep(2000);
 		searchresultpage.wishListButtonClick();
 		Reporter.log("Wishlist button click is successful and moved to wishlist page");
 		
@@ -41,6 +42,7 @@ public class TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed extends BaseC
 		Thread.sleep(2000);
 		cartpage.hoverOveronChatBotMessageToShowCrossIcon();
 		cartpage.deletingTheChatBot();
+		Thread.sleep(2000);
 		cartpage.proceedToCheckOutButtonClick();
 		Reporter.log("Proceed To checkout button click is successful");
 		

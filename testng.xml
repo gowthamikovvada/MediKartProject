@@ -4,11 +4,11 @@
   <test thread-count="5" name="Test">
   <parameter name="Browsers" value="Chrome"></parameter>
     <classes>
+      <class name="package1.MediKartProject.TC_3Searching_WishList"/>
       <class name="package1.MediKartProject.TC_1SearchingOfAProduct"/>
       <class name="package1.MediKartProject.TC_2AddToCart"/>
-      <class name="package1.MediKartProject.TC_3Searching_WishList"/>
-       <class name="package1.MediKartProject.TC_4Searching_WishList_Cart"/>
       <class name="package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed"/>
+      <class name="package1.MediKartProject.TC_4Searching_WishList_Cart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
