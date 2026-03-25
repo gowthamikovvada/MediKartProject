@@ -13,19 +13,22 @@ public class BaseClass extends ListenersLogic {
 	@BeforeMethod
 	public void browserLaunch(String nameOfBrowser) {
 		if(nameOfBrowser.equals("Chrome")) {
-			//ChromeOptions option=new ChromeOptions();
-			//option.addArguments("headless=new");
-			driver=new ChromeDriver();		
+			ChromeOptions option=new ChromeOptions();
+			option.addArguments("start-maximized");
+			//option.addArguments("headless");
+			driver=new ChromeDriver(option);		
 		}
 		if(nameOfBrowser.equals("Firefox")) {
-			//FirefoxOptions option=new FirefoxOptions();
-			//option.addArguments("headless=new");
-			driver=new FirefoxDriver();		
+			FirefoxOptions option=new FirefoxOptions();
+			option.addArguments("start-maximized");
+		//	option.addArguments("headless");
+			driver=new FirefoxDriver(option);		
 		}
 		if(nameOfBrowser.equals("Edge")) {
-			//EdgeOptions option=new EdgeOptions();
-			//option.addArguments("headless=new");
-			driver=new EdgeDriver();		
+			EdgeOptions option=new EdgeOptions();
+			option.addArguments("start-maximized");
+			//option.addArguments("headless");
+			driver=new EdgeDriver(option);		
 		}	
 		driver.get("https://medikart.co.in/");
 		driver.navigate().refresh();

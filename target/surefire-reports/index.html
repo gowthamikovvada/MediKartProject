@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_4Searching_WishList_Cart" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_3Searching_WishList" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,27 +127,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_2AddToCart" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_3Searching_WishList" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_1SearchingOfAProduct" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="package1.MediKartProject.TC_4Searching_WishList_Cart" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -138,10 +147,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">package1.MediKartProject.TC_2AddToCart</span>
+              <img src="failed.png"/>
+              <span class="class-name">package1.MediKartProject.TC_3Searching_WishList</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -149,10 +158,91 @@
                   <a name="search">
                   </a> <!-- search -->
                   <span class="method-name">search</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.get(Unknown Source)
+	at package1.MediKartProject.SearchResultPage.wishListIconsClick(SearchResultPage.java:40)
+	at package1.MediKartProject.TC_3Searching_WishList.search(TC_3Searching_WishList.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; value=&quot;-&quot; class=&quot;minus btn&quot; aria-label=&quot;Decrease quantity&quot;&gt; is not clickable at point (628, 425). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: wait; position: absolute;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=146.0.7680.154)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6072cfc5e6753afe73cca72f4c18c211, clickElement {id=f.74506CE6FEFE6D8FCD1F50A3BFD8B32F.d.A9202F5B82CE484B0CF121961C35C11B.e.349}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\prabh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50576}, goog:processID: 19272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50576/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6072cfc5e6753afe73cca72f4c18c211)] -&gt; xpath: //div[@class=&apos;quantity&apos;]/input[@aria-label=&apos;Decrease quantity&apos;]]
+Session ID: 6072cfc5e6753afe73cca72f4c18c211
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at package1.MediKartProject.CartPage.deletingTheQuantityInTheCart(CartPage.java:46)
+	at package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.search(TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">package1.MediKartProject.TC_4Searching_WishList_Cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.get(Unknown Source)
+	at package1.MediKartProject.SearchResultPage.wishListIconsClick(SearchResultPage.java:40)
+	at package1.MediKartProject.TC_4Searching_WishList_Cart.search(TC_4Searching_WishList_Cart.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -171,37 +261,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">package1.MediKartProject.TC_4Searching_WishList_Cart</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="search">
-                  </a> <!-- search -->
-                  <span class="method-name">search</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">package1.MediKartProject.TC_3Searching_WishList</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="search">
-                  </a> <!-- search -->
-                  <span class="method-name">search</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed</span>
+              <span class="class-name">package1.MediKartProject.TC_2AddToCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -224,13 +284,13 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;Browsers&quot; value=&quot;Edge&quot;/&gt;
+    &lt;parameter name=&quot;Browsers&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;package1.MediKartProject.TC_3Searching_WishList&quot;/&gt;
       &lt;class name=&quot;package1.MediKartProject.TC_1SearchingOfAProduct&quot;/&gt;
       &lt;class name=&quot;package1.MediKartProject.TC_2AddToCart&quot;/&gt;
-      &lt;class name=&quot;package1.MediKartProject.TC_3Searching_WishList&quot;/&gt;
-      &lt;class name=&quot;package1.MediKartProject.TC_4Searching_WishList_Cart&quot;/&gt;
       &lt;class name=&quot;package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed&quot;/&gt;
+      &lt;class name=&quot;package1.MediKartProject.TC_4Searching_WishList_Cart&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -274,23 +334,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'search')
 data.setCell(0, 2, 'package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed')
-data.setCell(0, 3, 22488);
+data.setCell(0, 3, 37478);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'search')
-data.setCell(1, 2, 'package1.MediKartProject.TC_4Searching_WishList_Cart')
-data.setCell(1, 3, 13503);
+data.setCell(1, 2, 'package1.MediKartProject.TC_2AddToCart')
+data.setCell(1, 3, 31066);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'search')
 data.setCell(2, 2, 'package1.MediKartProject.TC_3Searching_WishList')
-data.setCell(2, 3, 12100);
+data.setCell(2, 3, 10022);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'search')
-data.setCell(3, 2, 'package1.MediKartProject.TC_2AddToCart')
-data.setCell(3, 3, 9047);
+data.setCell(3, 2, 'package1.MediKartProject.TC_4Searching_WishList_Cart')
+data.setCell(3, 3, 8844);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'search')
 data.setCell(4, 2, 'package1.MediKartProject.TC_1SearchingOfAProduct')
-data.setCell(4, 3, 3936);
+data.setCell(4, 3, 2682);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -312,34 +372,8 @@ return data;
                 <span class="reporter-method-output">Browser Luanched successfully</span>
                 <span class="reporter-method-output">Nebulizer product was searched successfully</span>
                 <span class="reporter-method-output">Clicking on first result is successful</span>
-                <span class="reporter-method-output">Wishlist click is successful</span>
-                <span class="reporter-method-output">Wishlist button click is successful and moved to wishlist page</span>
-                <span class="reporter-method-output">Cart adding is successful</span>
-                <span class="reporter-method-output">Quantity increase is successful</span>
-                <span class="reporter-method-output">Quantity decrease is successful</span>
-                <span class="reporter-method-output">Proceed To checkout button click is successful</span>
-                <span class="reporter-method-output">TestCase5 passed with assertion</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">search</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Browser Luanched successfully</span>
-                <span class="reporter-method-output">Nebulizer product was searched successfully</span>
-                <span class="reporter-method-output">Clicking on first result is successful</span>
                 <span class="reporter-method-output">Product added to cart is successful</span>
                 <span class="reporter-method-output">TestCase2 passed with assertion</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">search</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Browser Luanched successfully</span>
-                <span class="reporter-method-output">Nebulizer product was searched successfully</span>
-                <span class="reporter-method-output">Clicking on first result is successful</span>
-                <span class="reporter-method-output">Wishlist click is successful</span>
-                <span class="reporter-method-output">Wishlist button click is successful and moved to wishlist page</span>
-                <span class="reporter-method-output">TestCase with Assertion is pass</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -356,10 +390,26 @@ return data;
                 <span class="reporter-method-output">Browser Luanched successfully</span>
                 <span class="reporter-method-output">Nebulizer product was searched successfully</span>
                 <span class="reporter-method-output">Clicking on first result is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">search</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Browser Luanched successfully</span>
+                <span class="reporter-method-output">Nebulizer product was searched successfully</span>
+                <span class="reporter-method-output">Clicking on first result is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">search</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Browser Luanched successfully</span>
+                <span class="reporter-method-output">Nebulizer product was searched successfully</span>
+                <span class="reporter-method-output">Clicking on first result is successful</span>
                 <span class="reporter-method-output">Wishlist click is successful</span>
                 <span class="reporter-method-output">Wishlist button click is successful and moved to wishlist page</span>
                 <span class="reporter-method-output">Cart adding is successful</span>
-                <span class="reporter-method-output">TestCase4 passed with assertion</span>
+                <span class="reporter-method-output">Quantity increase is successful</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -377,78 +427,84 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">package1.MediKartProject.TC_1SearchingOfAProduct</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">package1.MediKartProject.TC_3Searching_WishList</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserLaunch(Edge)</span>
+                <span class="method-name">browserLaunch(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">search</span>
-                <span class="method-start">5698 ms</span>
+                <span class="method-start">21967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">10014 ms</span>
+                <span class="method-start">32289 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">package1.MediKartProject.TC_1SearchingOfAProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserLaunch(Chrome)</span>
+                <span class="method-start">32563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">search</span>
+                <span class="method-start">45825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">48761 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">package1.MediKartProject.TC_2AddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserLaunch(Edge)</span>
-                <span class="method-start">10286 ms</span>
+                <span class="method-name">browserLaunch(Chrome)</span>
+                <span class="method-start">49025 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">search</span>
-                <span class="method-start">14397 ms</span>
+                <span class="method-start">66589 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">23873 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">package1.MediKartProject.TC_3Searching_WishList</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">browserLaunch(Edge)</span>
-                <span class="method-start">24143 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">search</span>
-                <span class="method-start">30962 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">43364 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">package1.MediKartProject.TC_4Searching_WishList_Cart</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">browserLaunch(Edge)</span>
-                <span class="method-start">43597 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">search</span>
-                <span class="method-start">48053 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">61862 ms</span>
+                <span class="method-start">97954 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserLaunch(Edge)</span>
-                <span class="method-start">62195 ms</span>
+                <span class="method-name">browserLaunch(Chrome)</span>
+                <span class="method-start">98213 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">search</span>
-                <span class="method-start">66743 ms</span>
+                <span class="method-start">157080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">89462 ms</span>
+                <span class="method-start">195117 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">package1.MediKartProject.TC_4Searching_WishList_Cart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserLaunch(Chrome)</span>
+                <span class="method-start">195482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">search</span>
+                <span class="method-start">212945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">222015 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

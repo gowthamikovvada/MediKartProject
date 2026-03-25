@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="Browsers" value="Chrome"/>
+    <parameter name="Browsers" value="Edge"/>
     <classes>
       <class name="package1.MediKartProject.TC_1SearchingOfAProduct">
         <methods>

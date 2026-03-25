@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 25 11:53:36 IST 2026</td>
+<td>Started on:</td><td>Wed Mar 25 17:51:38 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89822 ms)</td>
+<tr><td>Total time:</td><td>222 seconds (222344 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,247 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='package1.MediKartProject.TC_4Searching_WishList_Cart.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_4Searching_WishList_Cart<br/>
+<a href="#Output-1881309779" onClick='toggleBox("Output-1881309779", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1881309779" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1881309779">
+Browser Luanched successfully<br/>
+Nebulizer product was searched successfully<br/>
+Clicking on first result is successful<br/>
+</div>
+</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.get(Unknown Source)
+	at package1.MediKartProject.SearchResultPage.wishListIconsClick(SearchResultPage.java:40)
+	at package1.MediKartProject.TC_4Searching_WishList_Cart.search(TC_4Searching_WishList_Cart.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1881309779", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881309779'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.get(Unknown Source)
+	at package1.MediKartProject.SearchResultPage.wishListIconsClick(SearchResultPage.java:40)
+	at package1.MediKartProject.TC_4Searching_WishList_Cart.search(TC_4Searching_WishList_Cart.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>8</td>
+<td>package1.MediKartProject.TC_4Searching_WishList_Cart@6ae5aa72</td></tr>
+<tr>
+<td title='package1.MediKartProject.TC_3Searching_WishList.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_3Searching_WishList<br/>
+<a href="#Output-47918293" onClick='toggleBox("Output-47918293", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-47918293" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-47918293">
+Browser Luanched successfully<br/>
+Nebulizer product was searched successfully<br/>
+Clicking on first result is successful<br/>
+</div>
+</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.get(Unknown Source)
+	at package1.MediKartProject.SearchResultPage.wishListIconsClick(SearchResultPage.java:40)
+	at package1.MediKartProject.TC_3Searching_WishList.search(TC_3Searching_WishList.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace47918293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace47918293'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.get(Unknown Source)
+	at package1.MediKartProject.SearchResultPage.wishListIconsClick(SearchResultPage.java:40)
+	at package1.MediKartProject.TC_3Searching_WishList.search(TC_3Searching_WishList.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>10</td>
+<td>package1.MediKartProject.TC_3Searching_WishList@6e171cd7</td></tr>
+<tr>
+<td title='package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed<br/>
+<a href="#Output-557568981" onClick='toggleBox("Output-557568981", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-557568981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-557568981">
+Browser Luanched successfully<br/>
+Nebulizer product was searched successfully<br/>
+Clicking on first result is successful<br/>
+Wishlist click is successful<br/>
+Wishlist button click is successful and moved to wishlist page<br/>
+Cart adding is successful<br/>
+Quantity increase is successful<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; value=&quot;-&quot; class=&quot;minus btn&quot; aria-label=&quot;Decrease quantity&quot;&gt; is not clickable at point (628, 425). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: wait; position: absolute;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=146.0.7680.154)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6072cfc5e6753afe73cca72f4c18c211, clickElement {id=f.74506CE6FEFE6D8FCD1F50A3BFD8B32F.d.A9202F5B82CE484B0CF121961C35C11B.e.349}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\prabh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50576}, goog:processID: 19272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50576/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6072cfc5e6753afe73cca72f4c18c211)] -&gt; xpath: //div[@class=&apos;quantity&apos;]/input[@aria-label=&apos;Decrease quantity&apos;]]
+Session ID: 6072cfc5e6753afe73cca72f4c18c211
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at package1.MediKartProject.CartPage.deletingTheQuantityInTheCart(CartPage.java:46)
+	at package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.search(TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557568981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557568981'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; value=&quot;-&quot; class=&quot;minus btn&quot; aria-label=&quot;Decrease quantity&quot;&gt; is not clickable at point (628, 425). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: wait; position: absolute;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=146.0.7680.154)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6072cfc5e6753afe73cca72f4c18c211, clickElement {id=f.74506CE6FEFE6D8FCD1F50A3BFD8B32F.d.A9202F5B82CE484B0CF121961C35C11B.e.349}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\prabh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50576}, goog:processID: 19272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50576/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6072cfc5e6753afe73cca72f4c18c211)] -&gt; xpath: //div[@class=&apos;quantity&apos;]/input[@aria-label=&apos;Decrease quantity&apos;]]
+Session ID: 6072cfc5e6753afe73cca72f4c18c211
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at package1.MediKartProject.CartPage.deletingTheQuantityInTheCart(CartPage.java:46)
+	at package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.search(TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>37</td>
+<td>package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed@6c64cb25</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,32 +317,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed<br/>
-<a href="#Output-1204030294" onClick='toggleBox("Output-1204030294", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1204030294" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1204030294">
-Browser Luanched successfully<br/>
-Nebulizer product was searched successfully<br/>
-Clicking on first result is successful<br/>
-Wishlist click is successful<br/>
-Wishlist button click is successful and moved to wishlist page<br/>
-Cart adding is successful<br/>
-Quantity increase is successful<br/>
-Quantity decrease is successful<br/>
-Proceed To checkout button click is successful<br/>
-TestCase5 passed with assertion<br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed@6ae5aa72</td></tr>
-<tr>
 <td title='package1.MediKartProject.TC_2AddToCart.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_2AddToCart<br/>
-<a href="#Output-51460663" onClick='toggleBox("Output-51460663", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2082545616" onClick='toggleBox("Output-2082545616", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-51460663" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-51460663">
+<a href="#Output-2082545616" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2082545616">
 Browser Luanched successfully<br/>
 Nebulizer product was searched successfully<br/>
 Clicking on first result is successful<br/>
@@ -110,57 +330,22 @@ TestCase2 passed with assertion<br/>
 </div>
 </td>
 <td></td>
-<td>9</td>
-<td>package1.MediKartProject.TC_2AddToCart@dd8ba08</td></tr>
-<tr>
-<td title='package1.MediKartProject.TC_3Searching_WishList.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_3Searching_WishList<br/>
-<a href="#Output-502102804" onClick='toggleBox("Output-502102804", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-502102804" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-502102804">
-Browser Luanched successfully<br/>
-Nebulizer product was searched successfully<br/>
-Clicking on first result is successful<br/>
-Wishlist click is successful<br/>
-Wishlist button click is successful and moved to wishlist page<br/>
-TestCase with Assertion is pass<br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>package1.MediKartProject.TC_3Searching_WishList@245b4bdc</td></tr>
+<td>31</td>
+<td>package1.MediKartProject.TC_2AddToCart@245b4bdc</td></tr>
 <tr>
 <td title='package1.MediKartProject.TC_1SearchingOfAProduct.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_1SearchingOfAProduct<br/>
-<a href="#Output-1328323494" onClick='toggleBox("Output-1328323494", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1237264838" onClick='toggleBox("Output-1237264838", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1328323494" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1328323494">
+<a href="#Output-1237264838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237264838">
 Browser Luanched successfully<br/>
 Nebulizer product was searched successfully<br/>
 TestCase with Assertion passed<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>package1.MediKartProject.TC_1SearchingOfAProduct@6e171cd7</td></tr>
-<tr>
-<td title='package1.MediKartProject.TC_4Searching_WishList_Cart.search()'><b>search</b><br>Test class: package1.MediKartProject.TC_4Searching_WishList_Cart<br/>
-<a href="#Output-1610155589" onClick='toggleBox("Output-1610155589", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1610155589" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1610155589">
-Browser Luanched successfully<br/>
-Nebulizer product was searched successfully<br/>
-Clicking on first result is successful<br/>
-Wishlist click is successful<br/>
-Wishlist button click is successful and moved to wishlist page<br/>
-Cart adding is successful<br/>
-TestCase4 passed with assertion<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>package1.MediKartProject.TC_4Searching_WishList_Cart@6c64cb25</td></tr>
+<td>2</td>
+<td>package1.MediKartProject.TC_1SearchingOfAProduct@dd8ba08</td></tr>
 </table><p>
 </body>
 </html>
