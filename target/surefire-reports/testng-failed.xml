@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="Browsers" value="Edge"/>
+    <classes>
+      <class name="package1.MediKartProject.TC_2AddToCart">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="closeBrowser"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- package1.MediKartProject.TC_2AddToCart -->
+      <class name="package1.MediKartProject.TC_1SearchingOfAProduct">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="search"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- package1.MediKartProject.TC_1SearchingOfAProduct -->
+      <class name="package1.MediKartProject.TC_4Searching_WishList_Cart">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="closeBrowser"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- package1.MediKartProject.TC_4Searching_WishList_Cart -->
+      <class name="package1.MediKartProject.TC_3Searching_WishList">
+        <methods>
+          <include name="search"/>
+          <include name="browserLaunch"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- package1.MediKartProject.TC_3Searching_WishList -->
+      <class name="package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="closeBrowser"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- package1.MediKartProject.TC_5Searching_WishList_Cart_QuantityAddDelete_Proceed -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
